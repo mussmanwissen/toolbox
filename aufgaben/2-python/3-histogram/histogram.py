@@ -1,0 +1,23 @@
+
+# encoding: utf-8
+from __future__ import (print_function,
+                        division,
+                        unicode_literals,
+                        absolute_import)
+
+def histogram(data):
+	
+	for i in range(0,len(data)):
+		if(data[i] < 0):
+			print("X")
+		elif(data[i]>0):
+			print(data[i]*"*")
+
+
+
+
+
+		
+n = [1,3,5,-1,-2,7,30,20,-1,15]
+
+histogram(n)

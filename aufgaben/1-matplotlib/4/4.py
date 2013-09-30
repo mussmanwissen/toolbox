@@ -1,0 +1,13 @@
+from pylab import *
+
+x,errx,y,erry = loadtxt("4.txt", unpack="true")
+t= linspace(-pi/2, 2*pi)
+plot(t,sin(t),label='"Fit"')
+errorbar(x,y,xerr=errx,yerr=erry,fmt='rx',label="Daten")
+xlim(t[0],t[-1])
+xlabel("$x$")
+ylabel("$f(x)$")
+legend(loc="best")
+tight_layout();
+savefig("my4.pdf")
+show();

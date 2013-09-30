@@ -1,0 +1,6 @@
+from pylab import *
+
+t=linspace(0,10)
+plot(t,t**2)
+plot(t,t**3)
+savefig("example.pdf")

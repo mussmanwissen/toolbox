@@ -1,0 +1,13 @@
+from pylab import *
+
+t = linspace(0,2*pi)
+plot(t,cos(t),'b--', label=r"$cos(x)$")
+plot(t,sin(t),'r', label=r"$sin(x)$")
+xlim(t[0],t[-1])
+ylim(-1.5,1.5)
+xlabel(r"$x$")
+legend(loc="best")
+xticks([0,pi/2,pi,3*pi/2,2*pi], [r"$0$",r"$ \frac{\pi}{2}$ ",r"$ \pi$ ",r"$ \frac{3\pi}{2}$ ",r"$ 2\pi$"])
+
+
+show()

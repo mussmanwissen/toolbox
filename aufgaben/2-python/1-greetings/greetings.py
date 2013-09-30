@@ -1,0 +1,22 @@
+
+# encoding: utf-8
+from __future__ import (print_function,
+                        division,
+                        unicode_literals,
+                        absolute_import)
+
+names = ['World', 'Toolbox Workshop', 'Martin',  'Kevin']
+
+
+# hier ergänzen
+
+for i in range(0,len(names)-1,1):
+	print("Hello {}".format(names[i]))
+
+
+
+
+# Gewünschte Ausgabe:
+# Hello World
+# Hello Toolbox Workshop
+# Hello Kevin
